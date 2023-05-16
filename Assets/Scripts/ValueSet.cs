@@ -6,6 +6,7 @@ public class ValueSet : MonoBehaviour
 {
     public PipeSpawnScript spawner;
     public GameObject PipeEasy, PipeMed, PipeHard; //The three different speeds of pipe;
+    public GameObject PipeMineEasy, PipeMineMed, PipeMineHard, EasyMine, MedMine, HardMine; //New additions
     public GameObject Bird; //The Player;
     public GameObject Menu, GoSign; //The Start Menu and Ready Message;
     public Color EasyColor, MediumColor, HardColor;
@@ -29,7 +30,9 @@ public class ValueSet : MonoBehaviour
     public void Easy()
     {
         Menu.SetActive(false);
-        spawner.pipe = PipeEasy; //Speed 1;
+        spawner.pipe[0] = PipeEasy; //Speed 1;
+        spawner.pipe[1] = PipeMineEasy;
+        spawner.pipe[2] = EasyMine;
         spawner.spawnRate = 6; //The initial spawn rate;
         spawner.minPipeDistance = 3; //The minimum distance between pipes;
         spawner.decreaseTime = 0.1f; //The rate at which the pipes get closer together;
@@ -40,7 +43,9 @@ public class ValueSet : MonoBehaviour
     public void Meduim()
     {
         Menu.SetActive(false);
-        spawner.pipe = PipeMed; //Speed 2;
+        spawner.pipe[0] = PipeMed; //Speed 2;
+        spawner.pipe[1] = PipeMineMed;
+        spawner.pipe[2] = MedMine;
         spawner.spawnRate = 5f; //The initial spawn rate;
         spawner.minPipeDistance = 2f; //The minimum distance between pipes;
         spawner.decreaseTime = 0.2f; //The rate at which the pipes get closer together;
@@ -51,7 +56,9 @@ public class ValueSet : MonoBehaviour
     public void Hard()
     {
         Menu.SetActive(false);
-        spawner.pipe = PipeHard; //Speed 3;
+        spawner.pipe[0] = PipeHard; //Speed 3;
+        spawner.pipe[1] = PipeMineHard;
+        spawner.pipe[2] = HardMine;
         spawner.spawnRate = 4f; //The initial spawn rate;
         spawner.minPipeDistance = 1.5f; //The minimum distance between pipes;
         spawner.decreaseTime = 0.3f; //The rate at which the pipes get closer together;

@@ -1111,6 +1111,12 @@ MonoBehaviour:
   PipeEasy: {fileID: 446286275843097687, guid: 4b4a1448c0b04499c9fde25d0b23871a, type: 3}
   PipeMed: {fileID: 6581101333903519548, guid: e5c696c81f065fe4b83d3c764a9b5b77, type: 3}
   PipeHard: {fileID: 4724597004927100289, guid: cfb79af2343274e4dbf2c8f6cad7f74b, type: 3}
+  PipeMineEasy: {fileID: 3415262911474289841, guid: 9575c46692d90d04a8b1dc6f8f0daba6, type: 3}
+  PipeMineMed: {fileID: 4460855599360574935, guid: 64399bf6214a67c47883b2c130ab6e51, type: 3}
+  PipeMineHard: {fileID: 7915848777709632071, guid: 61576be744beaa74aa9a525fd65c213f, type: 3}
+  EasyMine: {fileID: 5927295379544480699, guid: ce19bd91b934ae643aed95cb8982284f, type: 3}
+  MedMine: {fileID: 8187043029821809301, guid: 7cd2b85f13c6bef4591e981064484da3, type: 3}
+  HardMine: {fileID: 6509679512109552435, guid: 3ee38fe67bbbf8f48b1f86ef8d43a372, type: 3}
   Bird: {fileID: 1453960706}
   Menu: {fileID: 127478689}
   GoSign: {fileID: 190714592}
@@ -1466,7 +1472,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42cdac8557ccc4528bfd529e65128fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipe: {fileID: 446286275843097687, guid: 4b4a1448c0b04499c9fde25d0b23871a, type: 3}
+  pipe:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   spawnRate: 6
   decreaseTime: 0.1
   minPipeDistance: 2

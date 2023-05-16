@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PipeSpawnScript : MonoBehaviour
 {
-    public GameObject pipe;
+    public GameObject[] pipe; //An array instead of a single gameObject;
     public float spawnRate = 6, decreaseTime, minPipeDistance = 2;
     private float timer = 0;
     public float heightOffset = 10;
@@ -41,7 +41,9 @@ public class PipeSpawnScript : MonoBehaviour
 
         if (isOn == true) //To check if the game has begun;
         {
-            Instantiate(pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
+            int rand = Random.Range(0, pipe.Length); //Chooses a number within the pipe array;
+
+            Instantiate(pipe[rand], new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
         }
        
     }
