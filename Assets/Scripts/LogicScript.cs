@@ -9,13 +9,18 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText, highScoreText;
     public GameObject gameOverScreen;
+    public BirdScript bird;
 
     [ContextMenu("Increase Score")]
     public void addScore(int scoreToAdd)
     {
-        playerScore += scoreToAdd;
-        scoreText.text = playerScore.ToString();
-        CheckHighScore(); //Calls to check if current score is higher than high score;
+        if (bird.birdIsAlive == true)
+        {
+            playerScore += scoreToAdd;
+            scoreText.text = playerScore.ToString();
+            CheckHighScore(); //Calls to check if current score is higher than high score;
+        }
+       
     }
     public void CheckHighScore() //Manages the high score;
     {

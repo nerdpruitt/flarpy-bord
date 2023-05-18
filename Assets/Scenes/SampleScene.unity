@@ -1084,6 +1084,7 @@ MonoBehaviour:
   scoreText: {fileID: 887966238}
   highScoreText: {fileID: 652088194}
   gameOverScreen: {fileID: 826472975}
+  bird: {fileID: 1453960710}
 --- !u!4 &612700826
 Transform:
   m_ObjectHideFlags: 0
