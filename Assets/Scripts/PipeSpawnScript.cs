@@ -43,7 +43,7 @@ public class PipeSpawnScript : MonoBehaviour
         {
             int rand = Random.Range(0, pipe.Length); //Chooses a number within the pipe array;
 
-            Instantiate(pipe[rand], new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
+            Instantiate(pipe[rand], new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 11), transform.rotation);
         }
        
     }

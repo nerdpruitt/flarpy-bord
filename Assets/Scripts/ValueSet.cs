@@ -5,6 +5,8 @@ using UnityEngine;
 public class ValueSet : MonoBehaviour
 {
     public PipeSpawnScript spawner;
+    public MountainSpawn background;
+    public CloudSpawn cloudSpawner;
     public GameObject PipeEasy, PipeMed, PipeHard; //The three different speeds of pipe;
     public GameObject PipeMineEasy, PipeMineMed, PipeMineHard, EasyMine, MedMine, HardMine; //New additions
     public GameObject Bird; //The Player;
@@ -23,6 +25,8 @@ public class ValueSet : MonoBehaviour
             {
                 GoSign.SetActive(false);
                 spawner.isOn = true;
+                background.isOn = true;
+                cloudSpawner.isOn = true;
                 Bird.SetActive(true);
             }
         }       
