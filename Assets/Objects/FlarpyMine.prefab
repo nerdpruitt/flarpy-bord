@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7887755514440740427}
   - component: {fileID: 2523640184123093687}
-  - component: {fileID: 7837478258513846936}
+  - component: {fileID: 7101391922765824971}
   m_Layer: 0
   m_Name: FlarpyMine
   m_TagString: Untagged
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601471218002243204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.75, y: 0, z: 11}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 11}
+  m_LocalScale: {x: 1.2584, y: 1.2584, z: 0.6292}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c1f064f2b58542c45ae178c5b4965d3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5658132991619940a985fc517ceae99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7837478258513846936
+--- !u!58 &7101391922765824971
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,6 +98,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.15601905, y: 0.026003238}
   serializedVersion: 2
-  m_Radius: 1.2882333
+  m_Radius: 2.1820216
